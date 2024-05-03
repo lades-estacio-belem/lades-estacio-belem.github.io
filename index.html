@@ -3,45 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratório de Desenvolvimento de Sistemas - LADES</title>
-    <link rel="stylesheet" href="/styles.css">
+    <title>LADES - Laboratório de Desenvolvimento de Sistemas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        section {
+            padding: 50px 0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Laboratório de Desenvolvimento de Sistemas</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>LADES</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <section id="sobre">
-        <h2>Sobre nós</h2>
-        <p>O Laboratório de Desenvolvimento de Sistemas é um espaço dedicado à pesquisa e desenvolvimento de soluções de software inovadoras.</p>
+        <div class="container">
+            <h2>Sobre o LADES</h2>
+            <p>O Laboratório de Desenvolvimento de Sistemas (LADES) é um espaço dedicado à pesquisa e desenvolvimento de soluções de software inovadoras.</p>
+        </div>
     </section>
+
     <section id="projetos">
-        <h2>Nossos Projetos</h2>
-        <p>Aqui estão alguns dos nossos projetos recentes:</p>
-        <ul>
-            <li>Projeto 1</li>
-            <li>Projeto 2</li>
-            <li>Projeto 3</li>
-        </ul>
+        <div class="container">
+            <h2>Nossos Projetos</h2>
+            <p>Aqui estão alguns dos nossos projetos recentes:</p>
+            <ul>
+                <li>Projeto 1</li>
+                <li>Projeto 2</li>
+                <li>Projeto 3</li>
+            </ul>
+        </div>
     </section>
+
     <section id="contato">
-        <h2>Entre em Contato</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Seu Nome" required>
-            <input type="email" placeholder="Seu E-mail" required>
-            <textarea placeholder="Sua Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form id="contact-form" method="post">
+                <input type="text" name="nome" placeholder="Seu Nome" required><br>
+                <input type="email" name="email" placeholder="Seu E-mail" required><br>
+                <textarea name="mensagem" placeholder="Sua Mensagem" required></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
+
     <footer>
-        <p>&copy; 2024 Laboratório de Desenvolvimento de Sistemas</p>
+        <div class="container">
+            <p>&copy; 2024 LADES - Laboratório de Desenvolvimento de Sistemas</p>
+        </div>
     </footer>
-    <script src="/script.js"></script>
 </body>
 </html>
